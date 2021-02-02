@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+     body
+    {
+    background:url(book1.jpg);
+    background-size:100% 800px;
+    -moz-background-size:100% 800px; /* 老版本的 Firefox */
+    background-repeat:no-repeat;
+    }
+    
+    
+    div.wenzi{
+        width:320px;
+        
+        position: absolute;
+        top: 200px;
+        left: 380px;        
+    }
+    div.img{
+        position: absolute;
+        top:200px;
+        left:830px;
+        width: 450px;
+    }
+    span.left{
+        position: absolute;
+        top: 50%;
+        left: 18%;
+    }
+    span.right{
+        position: absolute;
+        top: 50%;
+        right: 18%;
+    }
+    span.back{
+        position: absolute;
+        top:30px;
+        left:30px;
+    }
+     *{padding: 0;margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */
+    .wrap{width: 800px;margin: 0 auto;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration: none;}   /* 去掉默认a标签的下划线 */
+    ul,li{list-style: none;}
+    nav .level>li{float: center;width: 16.66%;text-align: center;background: bisque;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: black;}
+    nav .level>li:hover{background:  #EAADEA;}   /* 设置鼠标滑过后的样式 */
+
+    nav .two{display: none;margin-top: 10px;}  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+    nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+    nav .two li:hover{background: bisque;}
+    nav{
+        position: absolute;
+        top:70px;
+        left: 10px;
+    }
+    </style>
+</head>
+<body>
+<nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="1.html">首页</a></li>
+                <li>
+                        地点游
+                    <ul class="two">
+                        <li><a href="chengdu1.html">成都</a></li>
+                        <li><a href="mianyang1.html">绵阳</a></li>
+                        <li><a href="yunnan1.html">云南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    主题游
+                    <ul class="two">
+                        <li><a href="3.html">浪漫基地</a></li>
+                        <li><a href="4.html">避暑圣地</a></li>
+                        <li><a href="spring1.html">春景</a></li>
+                        <li><a href="summer1.html">夏景</a></li>
+                        <li><a href="fall1.html">秋景</a></li>
+                        <li><a href="winter1.html">冬景</a></li>
+                        <li><a href="2.html">夜景</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="liuyanban.html">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<span class="back">
+<a href="1.html">
+<img src="返回.png" width="80px" height="60px"></a></span>
+<span class="left"><a href="">
+<img src="play_wps图片.png" height="50px" width="50px"></a></span>
+    <div class="wenzi">
+      内蒙古· 额济纳<br>
+有人说，秋天去了额济纳，其他地方都成了将就！这片蒙古人的“先祖之地”，除了沙海绿洲清泉，更有一个金色圣殿般的秋天。
+这片常住人口只有3万的塞北之地，却拥有整整39万亩不朽胡杨林。居延海边千顷芦苇花开，林间穿梭而过的驼队铃铛作响，美不胜收。地广人稀，金秋的额济纳旗绝不缺少亮点。
+这个秋天，就用一场旅行，纵容自己迷失在金色海洋里。一年仅限21天不可复制的金秋，每年的胡杨节在9月25日至10月15日左右，同时也是额济纳最美的时间。如果错过了这个时间，只好有缘再等来年。
+    </div>
+    <div class="img">
+    <img src="微信图片_20190630004155.png" width="200px" height="150px">
+    <img src="微信图片_20190630004212.png" width="200px" height="170px">
+    <img src="微信图片_20190630004230.png" width="400px" height="200px"></div>
+
+<span class="right">
+    <a href="fall2.html">
+<img src="play_wps图片1.png" height="50px" width="50px"></a></span>
+
+</body>
+</html>

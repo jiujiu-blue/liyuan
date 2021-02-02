@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	span.summer1>iframe{
+		position: absolute;
+		top: 200px;
+		left: 200px;
+	}
+	span.summer1>p{
+		position: absolute;
+		top: 100px;
+		left: 100px;
+	}
+	span.summer1>p{
+		position: absolute;
+		top: 100px;
+		left: 120px;
+	}
+	 *{padding: 0;margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */
+    .wrap{width: 800px;margin: 0 auto;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration: none;}   /* 去掉默认a标签的下划线 */
+    ul,li{list-style: none;}
+    nav .level>li{float: left;width: 16.66%;text-align: center;background: bisque;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: black;}
+    nav .level>li:hover{background:  #EAADEA;}   /* 设置鼠标滑过后的样式 */
+
+    nav .two{display: none;margin-top: 10px;}  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+    nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+    nav .two li:hover{background: bisque;}
+    
+	</style>
+</head>
+<body>
+<nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="1.html">首页</a></li>
+                <li>
+                        地点游
+                    <ul class="two">
+                        <li><a href="chengdu1.html">成都</a></li>
+                        <li><a href="xianyang1.html">绵阳</a></li>
+                        <li><a href="yunnan1.html">云南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    主题游
+                    <ul class="two">
+                        <li><a href="3.html">浪漫基地</a></li>
+                        <li><a href="4.html">避暑圣地</a></li>
+                        <li><a href="spring1.html">春景</a></li>
+                        <li><a href="summer1.html">夏景</a></li>
+                        <li><a href="fall.html">秋景</a></li>
+                        <li><a href="winter1.html">冬景</a></li>
+                        <li><a href="2.html">夜景</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="liuyanban.html">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<span class="summer1"><iframe name="content" src="summer.html" width=500 height=300 scrolling="no" frameborder=0></iframe><a href="summer.html" target="content"><p>春天</p></a></span>
+<span class="summer2"><iframe name="content" src="summer.html" width=500 height=300 scrolling="no" frameborder=0></iframe><a href="summer.html" target="content"><p>夏天</p></a></span>
+<span class="summer3"><iframe name="content" src="summer.html" width=500 height=300 scrolling="no" frameborder=0></iframe><a href="summer.html" target="content"><p>秋天</p></a></span>
+<span class="summer4"><iframe name="content" src="summer.html" width=500 height=300 scrolling="no" frameborder=0></iframe><a href="summer.html" target="content"><p>冬天</p></a></span>
+</body>
+</html>

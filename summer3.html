@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+     body
+    {
+    background:url(book1.jpg);
+    background-size:100% 800px;
+    -moz-background-size:100% 800px; /* 老版本的 Firefox */
+    background-repeat:no-repeat;
+    }
+    
+    
+    div.wenzi{
+        width:320px;
+        
+        position: absolute;
+        top: 200px;
+        left: 380px;        
+    }
+    div.img{
+        position: absolute;
+        top:250px;
+        left:840px;
+        width: 450px;
+    }
+    span.left{
+        position: absolute;
+        top: 50%;
+        left: 18%;
+    }
+    span.right{
+        position: absolute;
+        top: 50%;
+        right: 18%;
+    }
+    span.back{
+        position: absolute;
+        top:30px;
+        left:30px;
+    }
+     *{padding: 0;margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */
+    .wrap{width: 800px;margin: 0 auto;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration: none;}   /* 去掉默认a标签的下划线 */
+    ul,li{list-style: none;}
+    nav .level>li{float: center;width: 16.66%;text-align: center;background: bisque;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: black;}
+    nav .level>li:hover{background:  #EAADEA;}   /* 设置鼠标滑过后的样式 */
+
+    nav .two{display: none;margin-top: 10px;}  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+    nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+    nav .two li:hover{background: bisque;}
+    nav{
+        position: absolute;
+        top:70px;
+        left: 10px;
+    }
+    </style>
+</head>
+<body>
+<nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="1.html">首页</a></li>
+                <li>
+                        地点游
+                    <ul class="two">
+                        <li><a href="chengdu1.html">成都</a></li>
+                        <li><a href="mianyang1.html">绵阳</a></li>
+                        <li><a href="yunnan1.html">云南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    主题游
+                    <ul class="two">
+                        <li><a href="3.html">浪漫基地</a></li>
+                        <li><a href="4.html">避暑圣地</a></li>
+                        <li><a href="spring1.html">春景</a></li>
+                        <li><a href="summer1.html">夏景</a></li>
+                        <li><a href="fall1.html">秋景</a></li>
+                        <li><a href="winter1.html">冬景</a></li>
+                        <li><a href="2.html">夜景</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="liuyanban.html">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<span class="back">
+<a href="1.html">
+<img src="返回.png" width="80px" height="60px"></a></span>
+<span class="left"><a href="summer2.html">
+<img src="play_wps图片.png" height="50px" width="50px"></a></span>
+    <div class="wenzi">
+      西湖古称“钱塘湖”，又名“西子湖”，古代诗人苏轼就对它评价道：“欲把西湖比西子，淡妆浓抹总相宜。”西湖形态为近于等轴的多边形，湖面被孤山及苏堤、白堤两条人工堤分割为5个子湖区，子湖区间由桥孔连通，各部分的湖水不能充分掺混，造成各湖区水质差异，大部分径流补给先进入西侧3个子湖区，再进入外西湖；湖水总面积5.593平方公里;，总容积1．10亿立方米，平均水深1．97 米；西湖底质是一种有机质含量特别高的湖沼相沉积，属于粉砂质粘土或粉砂质亚粘土，最上层皆为藻骸腐泥层（黑色有机质粘土），中层泥炭层或沼泽土，最下层为基底粉砂层；入湖河流部是短小的溪涧，主要补水河流为金沙涧、龙泓涧和长桥溪泄流。西湖，是一首诗，一幅天然图画，一个美丽动人的故事，不论是多年居住在这里的人还是匆匆而过的旅人，无不为这天下无双的美景所倾倒。
+    </div>
+    <div class="img">
+    <img src="hangzhouxihu.jpg" width="380px" height="300px">
+    </div>
+<span class="right">
+    <a href="summer4.html">
+<img src="play_wps图片1.png" height="50px" width="50px"></a></span>
+
+
+</body>
+</html>

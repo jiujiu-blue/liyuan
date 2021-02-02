@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+     body
+    {
+    background:url(book1.jpg);
+    background-size:100% 800px;
+    -moz-background-size:100% 800px; /* 老版本的 Firefox */
+    background-repeat:no-repeat;
+    }
+    
+    
+    div.wenzi{
+        width:320px;
+        
+        position: absolute;
+        top: 200px;
+        left: 380px;        
+    }
+    div.img{
+        position: absolute;
+        top:250px;
+        left:840px;
+        width: 450px;
+    }
+    span.left{
+        position: absolute;
+        top: 50%;
+        left: 18%;
+    }
+    span.right{
+        position: absolute;
+        top: 50%;
+        right: 18%;
+    }
+    span.back{
+        position: absolute;
+        top:30px;
+        left:30px;
+    }
+     *{padding: 0;margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */
+    .wrap{width: 800px;margin: 0 auto;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration: none;}   /* 去掉默认a标签的下划线 */
+    ul,li{list-style: none;}
+    nav .level>li{float: center;width: 16.66%;text-align: center;background: bisque;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: black;}
+    nav .level>li:hover{background:  #EAADEA;}   /* 设置鼠标滑过后的样式 */
+
+    nav .two{display: none;margin-top: 10px;}  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+    nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+    nav .two li:hover{background: bisque;}
+    nav{
+        position: absolute;
+        top:70px;
+        left: 10px;
+    }
+    </style>
+</head>
+<body>
+<nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="1.html">首页</a></li>
+                <li>
+                        地点游
+                    <ul class="two">
+                        <li><a href="chengdu1.html">成都</a></li>
+                        <li><a href="mianyang1.html">绵阳</a></li>
+                        <li><a href="yunnan1.html">云南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    主题游
+                    <ul class="two">
+                        <li><a href="3.html">浪漫基地</a></li>
+                        <li><a href="4.html">避暑圣地</a></li>
+                        <li><a href="spring1.html">春景</a></li>
+                        <li><a href="summer1.html">夏景</a></li>
+                        <li><a href="fall1.html">秋景</a></li>
+                        <li><a href="winter1.html">冬景</a></li>
+                        <li><a href="2.html">夜景</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="liuyanban.html">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<span class="back">
+<a href="1.html">
+<img src="返回.png" width="80px" height="60px"></a></span>
+<span class="left"><a href="spring1.html">
+<img src="play_wps图片.png" height="50px" width="50px"></a></span>
+
+    <div class="wenzi">
+      蠡湖湖<br>南岸有宝界山，又名朱山，建有唐城，三国城，水浒城作为中央电视台影视基地。北岸有蠡园、蠡湖中央公园、亚洲城。宝界桥横卧湖面，为我国著名实业家荣宗敬、荣德生捐建，长300多米，将蠡湖东西分开；蠡湖东岸有“高子水居”遗迹，是明末东林党人高攀龙隐居读书的地方。
+
+蠡湖东南为长广溪湿地公园，西南则国家重点名胜区“太湖”的主要景点之一——鼋头渚公园。
+
+坐落在蠡湖北岸的青祁村，它因紧傍蠡湖而得名。而湖一名，则来自二千四百多年前的春秋战国时期，范蠡与西施泛舟湖上的故事。现在的蠡园，有四个游览小区。
+
+东部，沿湖有千步长廊(碑刻)、晴红烟绿水榭、凝春塔，以及老蠡园的水池、荷叶亭等，还有新建德柳影亭、绿漪亭、水榭、春秋阁、映月桥；西部有百花山房、濯锦楼、月波平眺亭、南堤春晓、四季亭、渔庄亭；中部有假山群、荷池、莲舫、洗耳泉、桂林天香等。
+
+
+    </div>
+    <div class="img">
+    <img src="wuxi.png" width="380px" height="300px">
+    </div>
+<span class="right">
+    <a href="spring3.html">
+<img src="play_wps图片1.png" height="50px" width="50px"></a></span>
+
+
+</body>
+</html>

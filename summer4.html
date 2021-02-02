@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+     body
+    {
+    background:url(book1.jpg);
+    background-size:100% 800px;
+    -moz-background-size:100% 800px; /* 老版本的 Firefox */
+    background-repeat:no-repeat;
+    }
+    
+    
+    div.wenzi{
+        width:320px;
+        
+        position: absolute;
+        top: 200px;
+        left: 380px;        
+    }
+    div.img{
+        position: absolute;
+        top:250px;
+        left:840px;
+        width: 450px;
+    }
+    span.left{
+        position: absolute;
+        top: 50%;
+        left: 18%;
+    }
+    span.right{
+        position: absolute;
+        top: 50%;
+        right: 18%;
+    }
+    span.back{
+        position: absolute;
+        top:30px;
+        left:30px;
+    }
+     *{padding: 0;margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */
+    .wrap{width: 800px;margin: 0 auto;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration: none;}   /* 去掉默认a标签的下划线 */
+    ul,li{list-style: none;}
+    nav .level>li{float: center;width: 16.66%;text-align: center;background: bisque;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: black;}
+    nav .level>li:hover{background:  #EAADEA;}   /* 设置鼠标滑过后的样式 */
+
+    nav .two{display: none;margin-top: 10px;}  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+    nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+    nav .two li:hover{background: bisque;}
+    nav{
+        position: absolute;
+        top:70px;
+        left: 10px;
+    }
+    </style>
+</head>
+<body>
+<nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="1.html">首页</a></li>
+                <li>
+                        地点游
+                    <ul class="two">
+                        <li><a href="chengdu1.html">成都</a></li>
+                        <li><a href="mianyang1.html">绵阳</a></li>
+                        <li><a href="yunnan1.html">云南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    主题游
+                    <ul class="two">
+                        <li><a href="3.html">浪漫基地</a></li>
+                        <li><a href="4.html">避暑圣地</a></li>
+                        <li><a href="spring1.html">春景</a></li>
+                        <li><a href="summer1.html">夏景</a></li>
+                        <li><a href="fall1.html">秋景</a></li>
+                        <li><a href="winter1.html">冬景</a></li>
+                        <li><a href="2.html">夜景</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="liuyanban.html">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<span class="back">
+<a href="1.html">
+<img src="返回.png" width="80px" height="60px"></a></span>
+<span class="left"><a href="summer3.html">
+<img src="play_wps图片.png" height="50px" width="50px"></a></span>
+    <div class="wenzi">
+      九寨沟风景名胜区位于四川省阿坝藏族羌族自治州南坪县境内，距离成都市400多公里，是一条纵深40余公里的山沟谷地，因周围有9 个藏族村寨而得名，总面积约620平方公里，大约有52％的面积被茂密的原始森林所覆盖。林中夹生的箭竹和各种奇花异草，使举世闻名的大熊猫、金丝猴、白唇鹿等珍稀动物乐于栖息在此。沟中地僻人稀，景物特异，富于原始自然风貌，有“童话世界”之誉。有长海、剑岩、诺日朗、树正、扎如、黑海六大景区，以翠海、叠瀑、彩林、雪峰、藏情这五绝而驰名中外。
+九寨沟蓝天、白云、雪山、森林、尽融于瀑、河、滩、缀成一串串宛若从天而降的珍珠；篝火、烤羊、锅庄和古老而美丽的传说，展现出藏羌人热情强悍的民族风情。九寨沟，一个五彩斑斓、绚丽奇绝的瑶池玉盆，一个原始古朴、神奇梦幻的人间仙境，一个不见纤尘、自然纯净的“童话世界”!
+    </div>
+    <div class="img">
+    <img src="jiuzhaigou.jpg" width="380px" height="300px">
+    </div>
+<span class="right">
+    <a href="">
+<img src="play_wps图片1.png" height="50px" width="50px"></a></span>
+
+
+</body>
+</html>

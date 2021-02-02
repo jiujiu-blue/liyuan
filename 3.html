@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <style type="text/css">
+body
+    {
+    background:url(beaty.jpg);
+    background-size:100% 800px;
+    -moz-background-size:100% 800px; /* 老版本的 Firefox */
+    background-repeat:no-repeat;
+    }
+   p{
+    color:brown;
+    font-family: STXingkai;
+    font-size: 1cm;
+   }
+  .flip-container {
+    margin: 30px;
+    display: inline-block;
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    perspective: 500;
+    -ms-transform: perspective(500px);
+    -moz-transform: perspective(500px); /*重要*/
+    transform-style: preserve-3d; /*重要*/
+}
+.flipper {
+    position: relative;
+    width: 255px;
+    height: 210px;
+    transition: 0.6s;
+    transform-style: preserve-3d; /*重要*/
+}
+/* 触发翻转 */
+.flip-container:hover .flipper{
+    transform: rotateY(180deg);
+
+}
+.front ,.back{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    backface-visibility: hidden;  /*重要*/
+    width: 100%;
+    height: 100%;
+}
+.front {
+    transform: rotateY(0deg);
+    z-index: 2;
+    
+}
+.back {
+    transform: rotateY(-180deg);
+    background: url(梦幻背景.jpg);
+    font-family: STXingkai;
+}
+  *{padding: 0;margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */
+    .wrap{width: 700px;margin: 0 auto;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration: none;}   /* 去掉默认a标签的下划线 */
+    ul,li{list-style: none;}
+    nav .level>li{float: center;width: 16.66%;text-align: center;background: bisque;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: black;}
+    nav .level>li:hover{background:  #EAADEA;}   /* 设置鼠标滑过后的样式 */
+
+    nav .two{display: none;margin-top: 10px;text-align: center;
+        }  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+    nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+    nav .two li:hover{background: bisque;}
+    nav{
+        position: absolute;
+        top:10px;
+        left: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="bodystyle">
+<center>
+<br>
+<br>
+<p>全球8个浪漫旅行圣地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浪漫之旅值得一生回忆</p>
+<br>
+<br>
+<div class="flip-container">
+    <div class="flipper">
+        <div class="front"><img src="weinisi.png" width="255px" height="210px"></div>
+        <div class="back">威尼斯：
+威尼斯的美食无与伦比的，文艺复兴的精华至今任闪耀着光芒，没有恼人的汽车噪音，只有贡多拉不紧不慢的浆声。
+美丽的建筑倒映在水中，威尼斯也漂荡在水中，就像一个漂浮在碧波上浪漫的梦。</div>
+    </div>
+</div> 
+<div class="flip-container">
+    <div class="flipper">
+        <div class="front"><img src="xiaweiyi.png" width="255px" height="210px"></div>
+        <div class="back">夏威夷：
+夏威夷吸引旅游者的，并非名胜古迹，而是得天独厚的美丽环境，夏威夷人的热情、友善与诚挚。
+世界上很难找到像夏威夷这样一个令人身心完全放松的热带环境。火山公园，草裙舞，银色沙滩，还有，在绝不会懈怠到快要睡着的哈纳之路上驾车飞驰。</div>
+    </div>
+</div> 
+<div class="flip-container">
+    <div class="flipper">
+        <div class="front"><img src="meinai.png" width="255px" height="210px"></div>
+        <div class="back">美奈：
+曾经的小渔村，如今已经是越南著名的海滨度假胜地，长长的海岸线、热闹的渔村以及夜风海浪正是所有人期盼的风景。
+在美奈，每日都可以吃到新鲜的海鲜，欣赏到绝美的日落，玩到刺激的海上娱乐项目，而低廉的消费让美奈比任何其他地方更容易实现度假梦想。</div>
+    </div>
+</div> 
+<div class="flip-container">
+    <div class="flipper">
+        <div class="front"><img src="sumeidao.png" width="255px" height="210px"></div>
+        <div class="back">苏梅岛：
+在这片远离喧嚣的世外桃源，水清沙白的魅力海滩比比皆是。和煦的阳光、最美的日落、舒爽的海风、摇曳的椰林......这些元素正不断撩拨那颗想要远走的心。</div>
+    </div>
+</div> 
+<br>
+<div class="flip-container">
+    <div class="flipper">
+        <div class="front"><img src="balidao.png" width="255px" height="210px"></div>
+        <div class="back">巴厘岛：
+幽蓝海水绵白细沙，巴厘岛就像经线纬线一样，定义了世界上“人间天堂”的存在。
+巴厘岛的白沙滩、世界级的冲浪点、珊瑚礁和水疗中心无处不在，而且还有很多田园农舍、森林草原和急流深谷，错落有致地分布在面积不大的土地上。一座座优雅精致的别墅隐藏其间，营造出遗世独立的情调，弥漫着花香的传统SPA令人身心愉悦。
+    </div>
+</div>
+</div>
+<div class="flip-container">
+    <div class="flipper">
+        <div class="front"><img src="dabaodiao.png" width="255px" height="210px"></div>
+        <div class="back">大堡礁：
+这里是潜水天堂，瑰丽的海底珊瑚礁等待你的探寻。这里也是度假的胜地，岛上有不同星级的酒店，你可以找个喜欢的沙滩和海岛，在那发上一天的呆；也可以深入海底见识水下斑斓的世界。
+</div>
+    </div>
+</div> 
+<div class="flip-container">
+    <div class="flipper">
+        <div class="front"><img src="yiyaxiaozheng.png" width="255px" height="210px"></div>
+        <div class="back">伊亚小镇：
+圣托里尼岛的第二大城镇，白色的房子、蓝顶的教堂、传统的风车在夕阳的照耀下总是能让人陶醉。
+这里还有全世界最美丽的日落，坐在悬崖边就可以看到全世界最美丽的日落。这种夕阳美景被许多艺术家、摄影家作为灵感的来源。</div>
+    </div>
+</div> 
+
+<div class="flip-container">
+    <div class="flipper">
+        <div class="front"><img src="bulage.png" width="250px" height="201px"></div>
+        <div class="back">布拉格：
+布拉格的魅力绝不仅限于为数众多的历史古迹，更在于它独一无二的城市氛围。
+连续1000多年不间断的建筑发展为城市增添了许多神秘与浪漫，音乐、艺术、文学发展的绚丽多彩。
+走在街上，就像是在穿越时空的漫步，历史和现代完美地融合在一起。无论在布拉格的旅程如何度过，临行时都会有一种感觉：只来一次远远不够！</div>
+    </div>
+</div> 
+>
+</center>
+</div>
+<nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="1.html">首页</a></li>
+                <li>
+                        地点游
+                    <ul class="two">
+                        <li><a href="chengdu1.html">成都</a></li>
+                        <li><a href="mianyang1.html">绵阳</a></li>
+                        <li><a href="yunnan1.html">云南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    主题游
+                    <ul class="two">
+                        <li><a href="3.html">浪漫基地</a></li>
+                        <li><a href="4.html">避暑圣地</a></li>
+                        <li><a href="spring1.html">春景</a></li>
+                        <li><a href="summer1.html">夏景</a></li>
+                        <li><a href="fall1.html">秋景</a></li>
+                        <li><a href="winter1.html">冬景</a></li>
+                        <li><a href="2.html">夜景</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="liuyanban.html">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

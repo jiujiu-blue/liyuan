@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+     body
+    {
+    background:url(book1.jpg);
+    background-size:100% 800px;
+    -moz-background-size:100% 800px; /* 老版本的 Firefox */
+    background-repeat:no-repeat;
+    }
+    
+    
+    div.wenzi{
+        width:320px;
+        
+        position: absolute;
+        top: 200px;
+        left: 380px;        
+    }
+    div.img{
+        position: absolute;
+        top:250px;
+        left:840px;
+        width: 450px;
+    }
+    span.left{
+        position: absolute;
+        top: 50%;
+        left: 18%;
+    }
+    span.right{
+        position: absolute;
+        top: 50%;
+        right: 18%;
+    }
+    span.back{
+        position: absolute;
+        top:30px;
+        left:30px;
+    }
+     *{padding: 0;margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */
+    .wrap{width: 800px;margin: 0 auto;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration: none;}   /* 去掉默认a标签的下划线 */
+    ul,li{list-style: none;}
+    nav .level>li{float: center;width: 16.66%;text-align: center;background: bisque;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: black;}
+    nav .level>li:hover{background:  #EAADEA;}   /* 设置鼠标滑过后的样式 */
+
+    nav .two{display: none;margin-top: 10px;}  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+    nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+    nav .two li:hover{background: bisque;}
+    nav{
+        position: absolute;
+        top:70px;
+        left: 10px;
+    }
+    </style>
+</head>
+<body>
+<nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="1.html">首页</a></li>
+                <li>
+                        地点游
+                    <ul class="two">
+                        <li><a href="chengdu1.html">成都</a></li>
+                        <li><a href="mianyang1.html">绵阳</a></li>
+                        <li><a href="yunnan1.html">云南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    主题游
+                    <ul class="two">
+                        <li><a href="3.html">浪漫基地</a></li>
+                        <li><a href="4.html">避暑圣地</a></li>
+                        <li><a href="spring1.html">春景</a></li>
+                        <li><a href="summer1.html">夏景</a></li>
+                        <li><a href="fall1.html">秋景</a></li>
+                        <li><a href="winter1.html">冬景</a></li>
+                        <li><a href="2.html">夜景</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="liuyanban.html">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<span class="back">
+<a href="1.html">
+<img src="返回.png" width="80px" height="60px"></a></span>
+<span class="left"><a href="chengdu4.html">
+<img src="play_wps图片.png" height="50px" width="50px"></a></span>
+
+
+    <div class="wenzi">
+        大熊猫是人见人爱的珍稀动物，世界生物多样性保护的标志，亦是和平友好的象征。成都所属的崇州、都江堰、大邑、彭州、邛崃市县等均有大熊猫出没。我国80%以上的大熊猫分布在四川境内。
+    成都大熊猫繁育基地现建有齐全的各种齐全的各种大熊猫繁育所必须的设施，有兽舍、饲料室、医疗站、大熊猫纪念馆和实验楼，还种有大熊猫食用的上万丛竹子和灌木。纪念馆内共展出各类珍贵的图照资料800多幅，展示主要采自四川的各类标本实物2140多种，12450多件（只）。其中兽类标本100多种、鸟类标本300多种、两栖和爬行类标本240多种、鱼类标本230多种、蝴蝶及其它昆虫1100多种，化石及模型标本100多种和古今中外文献专著80多件。此外，还馆藏标本上万件（只），馆藏各类文献资料数千册（篇）。形成了以人类对大熊猫的认识研究、保护拯救和饲养繁育为主题，展示、宣传和保护大自然生物多样性的综合性博物馆。 
+    </div>
+    <div class="img">
+    <img src="xiongmaojidi.jpg" width="380px" height="300px">
+    </div>
+<span class="right">
+    <a href="chengdu6.html">
+<img src="play_wps图片1.png" height="50px" width="50px"></a></span>
+
+
+
+</body>
+</html>

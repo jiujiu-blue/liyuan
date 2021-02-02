@@ -1,0 +1,857 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+/*html {
+    min-height: 100%;
+}*/
+ 
+.slideshow {
+    list-style: none;
+    z-index: 1;
+}
+.slideshow li span.tu {
+    width: 75%;
+    height: 450px;
+    position: absolute;
+    top: 221px;
+    left: 170px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-animation: imageAnimation 24s linear infinite 0s;
+    -moz-animation: imageAnimation 24s linear infinite 0s;
+    animation: imageAnimation 24s linear infinite 0s;
+}
+.slideshow li p.da {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    bottom: 150px;
+    top:30%;
+    left:8%;
+    font-size: 0.6cm;
+    font-family: STXingkai;
+    opacity: 0;
+    
+    
+    text-transform: uppercase;
+    color: black;
+    -webkit-animation: titleAnimation 24s linear 1 0s;
+    -moz-animation: titleAnimation 24s linear 1 0s;
+    animation: titleAnimation 24s linear 1 0s;
+}
+.slideshow li p.er {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    bottom: 150px;
+    top:30%;
+    left:40%;
+    font-size: 0.6cm;
+    font-family: STXingkai;
+    opacity: 0;
+    
+    
+    text-transform: uppercase;
+    color: black;
+    -webkit-animation: titleAnimation 24s linear 1 0s;
+    -moz-animation: titleAnimation 24s linear 1 0s;
+    animation: titleAnimation 24s linear 1 0s;
+}
+@media only screen and (min-width: 768px) {
+    .slideshow li h3 {
+        bottom: 30px;
+        font-size: 8.125em;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .slideshow li h3 {
+        font-size: 10.9375em;
+    }
+}
+.slideshow li:nth-child(1) span.tu {
+   background-image: url(travel35.jpg);
+   
+}
+.slideshow li:nth-child(2) span.tu{
+    background-image: url(travel38.jpg);
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    animation-delay: 6s;
+}
+.slideshow li:nth-child(3) span.tu{
+    background-image: url(travel37.jpg);
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    animation-delay: 12s;
+}
+.slideshow li:nth-child(4) span.tu {
+    background-image: url(travel34.jpg );
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    animation-delay: 18s;
+}
+@-webkit-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+    12.5% {
+        opacity: 1;
+        -webkit-animation-timing-function: ease-out;
+    }
+    25% {
+        opacity: 1;
+    }
+    37.5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-moz-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        -moz-animation-timing-function: ease-in;
+    }
+    12.5% {
+        opacity: 1;
+        -moz-animation-timing-function: ease-out;
+    }
+    25% {
+        opacity: 1;
+    }
+    37.5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        -webkit-animation-timing-function: ease-in;
+        -moz-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    12.5% {
+        opacity: 1;
+        -webkit-animation-timing-function: ease-out;
+        -moz-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    25% {
+        opacity: 1;
+    }
+    37.5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes titleAnimation {
+    0% {
+        opacity: 0;
+    }
+    12.5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    37.5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-moz-keyframes titleAnimation {
+    0% {
+        opacity: 0;
+    }
+    12.5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    37.5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes titleAnimation {
+    0% {
+        opacity: 0;
+    }
+    12.5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    37.5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.no-cssanimations .slideshow li span.tu {
+    opacity: 1;
+}
+/*img{
+    height: 100%;
+    width: 100%;
+}*/
+ /*p.da{
+        position:absolute;
+        top:37%;
+        left:27%;
+        font-size: 0.6cm;
+        font-family: STXingkai;
+
+    }
+    p.er{
+        position:absolute;
+        top:15%;
+        left:15%;
+        font-size: 0.6cm;
+        font-family: STXingkai;
+    }*/
+    
+    div.xing1{
+        height: 30px;
+        width: 100%;
+        background-color: #8B4789;
+        position: absolute;
+        top:190px;
+        
+    }
+    span.travel1>img{
+        height: 100px;
+        width: 180px;
+        position: absolute;
+        left: 220px;
+        top: 70px;
+    }
+    span.travel2>img{
+        height: 100px;
+        width:130px;
+        position: absolute;
+        right: 400px;
+        top: 30px
+    }
+    span.travel5>img{
+        height: 190px;
+        width:410px;
+        position: absolute;
+        top: 0px;
+        right: 600px;
+       
+    }
+  
+span.season1>img{
+    
+    position: absolute;
+    top: 1320px;
+}
+p.siji{
+    /*font-family: STXingkai;*/
+    position: absolute;
+    top: 1340px;
+    font-size: 0.8cm;
+    color:brown;
+}
+div.spring{
+    position: absolute;
+    top:1430px;
+    left: 150px;
+}
+div.say1{
+    width: 550px;
+    position: absolute;
+    top: 0px;
+    left: 600px;
+}
+span.mianyang{
+    position: absolute;
+    top:1730px;
+    left:150px;
+    font-size: 0.8cm;
+    color:brown;
+}
+div.summer{
+    position: absolute;
+    top: 1825px;
+    left:170px; 
+    
+}
+div.summer>img{
+    width: 383px;
+    height: 275px;
+}
+
+/*span.season2>img{
+    position: absolute;
+    top:1690px;
+}*/
+span.xing7{
+    position: absolute;
+    top:2070px;
+    left:170px;
+    width: 383px;
+    height: 37px;
+    background-color: #3C3C3C;
+    /*font-family: STXingkai;*/
+    font-size: 0.8cm;
+    color:white;
+}
+span.xing8{
+    position: absolute;
+    top:2070px;
+    left:569px;
+    width: 383px;
+    height: 37px;
+    background-color:#3C3C3C;
+    /*font-family: STXingkai;*/
+    font-size: 0.8cm;
+    color:white;
+}
+span.xing9{
+    position: absolute;
+    top:2070px;
+    left:969px;
+    width: 383px;
+    height: 37px;
+    background-color: #3C3C3C;
+    /*font-family: STXingkai;*/
+    font-size: 0.8cm;
+    color:white;
+
+}
+div.fall{
+    position: absolute;
+    top:2195px;
+    left: 170px;
+}
+div.fall>img{
+    position: absolute;
+    top:30px;
+    left:0px;
+}
+div.say3{
+    width: 550px;
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    /*font-family: STXingkai;*/
+    font-size: 0.54cm;
+}
+span.mulan{
+    position: absolute;
+    left: 10px;
+    top:2170px;
+    /*font-family: STXingkai;*/
+    font-size: 0.8cm;
+    color:brown;
+
+}
+/*span.season3>img{
+    position: absolute;
+    top:2120px;
+}*/
+div.winter{
+    position: absolute;
+    top:2585px;
+    left: 170px;
+}
+div.winter>img{
+    position: absolute;
+    top:30px;
+    left:610px;
+}
+div.say4{
+    width: 550px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /*font-family: STXingkai;*/
+    font-size: 0.50cm;
+}
+span.haerbin{
+    position: absolute;
+    top:2580px;
+    /*font-family: STXingkai;*/
+    font-size: 0.8cm;
+    color:brown;
+
+}
+/*span.season4>img{
+    position: absolute;
+    top:2527px;
+}*/
+div.xing2{
+    background-color: #FFE1FF;
+    width: 75%;
+    height: 540px;
+    position: absolute;
+    top: 760px;
+    left:170px;
+}
+div.yunnan>p{
+    position: absolute;
+    top: 2895px;
+    left: 150px;
+    /*font-family: STXingkai;*/
+    font-size: 0.8cm;
+    color:brown;
+}
+
+div.yunnan>img{
+    position: absolute;
+    top: 2985px;
+    left: 170px;
+}
+div.lijiang>img{
+    position: absolute;
+    top: 2985px;
+    left: 560px;
+}
+div.wen1{
+    position: absolute;
+    top: 3205px;
+    left: 170px;
+    width: 370px;
+    height: 37px;
+    background-color: black;
+    /*font-family: STXingkai;*/
+    font-size: 0.8cm;
+    color:white;
+}
+div.wen2{
+    position: absolute;
+    top: 3205px;
+    left: 560px;
+    width: 370px;
+    height: 37px;
+    background-color: black;
+    /*font-family: STXingkai;*/
+    font-size: 0.8cm;
+    color:white;
+}
+div.yunnanjieshao{
+    position: absolute;
+    top: 2985px;
+    left: 970px;
+    width: 380px;
+    height: 250px;
+    
+    /*font-family: STXingkai;*/
+    font-size: 0.5cm;
+   
+}
+#tab {
+                 width: 100%;
+                 height: 50%
+                 margin: 0 auto;
+                 position: absolute;
+                top:1380px;
+                left:150px;
+                 /*box-shadow: 5px 5px 5px #888888;*/
+           }
+           #tab h3 {
+                margin: 0px;
+                 padding: 0px;
+                /*font-size: 14px;*/
+                float: left;
+                 right: 5px;                
+                width: 110px;
+                 height: 24px;
+                line-height: 24px;
+                position: relative;
+                left:60px;
+                
+              /*text-align: center; */
+            }
+            
+          #tab div {
+                clear: both;
+                height: 100px;
+               /*font-size: 14px;*/
+               padding: 20px  0px 0px 20px;    
+                display: none; 
+                
+
+          }
+           #tab h3.active {
+               
+           }
+           #tab div.content {
+                display: block;
+
+                
+                
+           }
+
+                
+           
+           h3{
+            /*font-family: STXingkai;*/
+            font-size: 0.6cm;
+            color:brown;
+           
+            
+           }
+           h3:hover{
+            cursor: pointer;
+            border-radius:15px;
+            
+            color: black;
+            height: 8px;
+            width: 5px;
+           }
+           
+           span.xing3{
+            position:absolute;
+            top:279px;
+            left: 20px;
+            width: 293px;
+            height: 37px;
+            background-color: #3C3C3C;
+            /*font-family: STXingkai;*/
+            font-size: 0.8cm;
+            color:white;
+           }
+           span.xing4{
+            position:absolute;
+            top:279px;
+            left: 317px;
+            width: 293px;
+            height: 37px;
+            background-color: #3C3C3C;
+            /*font-family: STXingkai;*/
+            font-size: 0.8cm;
+            color:white;
+           }
+           span.xing5{
+            position:absolute;
+            top:279px;
+            left: 614px;
+            width: 293px;
+            height: 37px;
+            background-color:#3C3C3C;
+            /*font-family: STXingkai;*/
+            font-size: 0.8cm;
+            color:white;
+           }
+           span.xing6{
+            position:absolute;
+            top:279px;
+            left: 911px;
+            width: 293px;
+            height: 37px;
+            background-color: #3C3C3C;
+            /*font-family: STXingkai;*/
+            font-size: 0.8cm;
+             color:white;
+           }
+           div.chengdou{
+            position: absolute;
+            left:300px;
+            top:49px;
+
+           }
+           div.chengdou>img{
+            width:270px;
+            height: 220px;
+            
+           }
+           div.xing10{
+            background-color:#CC3299;
+            width: 75%;
+            height: 5px;
+            position: absolute;
+            top: 760px;
+            left:170px;
+            
+           }
+           span.cheng1{
+            width:270px;
+            height: 30px;
+            position: absolute;
+            top: 1000px;
+            left:470px;
+            background-color: white;
+
+           }
+           span.cheng2{
+            width:270px;
+            height: 30px;
+            position: absolute;
+            top: 1000px;
+            left:752px;
+            background-color: white;
+
+           }
+           span.cheng3{
+            width:270px;
+            height: 30px;
+            position: absolute;
+            top: 1000px;
+            left:1034px;
+            background-color: white;
+
+           }
+           span.cheng4{
+            width:270px;
+            height: 30px;
+            position: absolute;
+            top: 1242px;
+            left:470px;
+            background-color: white;
+
+           }
+           span.cheng5{
+            width:270px;
+            height: 30px;
+            position: absolute;
+            top: 1242px;
+            left:752px;
+            background-color: white;
+
+           }
+           span.cheng6{
+            width:270px;
+            height: 30px;
+            position: absolute;
+            top: 1242px;
+            left:1034px;
+            background-color: white;
+
+           }
+           
+           a{
+            text-decoration: none;
+            color: black;
+
+           }
+           a:hover{
+            background-color: white;
+            border-radius: 10px;
+           }
+           span.cheng{
+            font-size: 0.8cm;
+            color:brown;
+            position: absolute;
+            top:700px;
+            left:150px;
+           }
+           div.many1{
+            position: absolute;
+            top:720px;
+            right:220px ;
+            background-color: #CC3299;
+           }
+           div.many2{
+            position: absolute;
+            top:1780;
+            right:220px ;
+            background-color: #CC3299;
+           }
+           div.many3{
+            position: absolute;
+            top:2950px;
+            right: 220px;
+            background-color: #CC3299;
+           }
+           span.many4{
+            position: absolute;
+            top:15px;
+            left: 1150px;
+            background-color: #CC3299;
+           }
+           span.many5{
+            position: absolute;
+            top:15px;
+            left: 1150px;
+            background-color: #CC3299;
+           }
+           span.many6{
+            position: absolute;
+            top:15px;
+            left: 1150px;
+            background-color: #CC3299;
+           }
+           span.many7{
+            position: absolute;
+            top:15px;
+            left: 1150px;
+            background-color: #CC3299;
+           }
+           div.end{
+            position: absolute;
+            top:3290px;
+            width: 100%;
+            height: 40px;
+            font-size: 0.8cm;
+            background-color: #8B4789;
+           }
+
+
+</style>
+<script type="text/javascript">
+             window.onload = function() {
+                var oTab = document.getElementById("tab");
+                 var aH3 = oTab.getElementsByTagName("h3");
+                 var aDiv = oTab.getElementsByTagName("div");
+                for (var i = 0; i < aH3.length; i++) {
+                     aH3[i].index = i;
+                    aH3[i].onclick = function() {
+                        for (var i = 0; i < aH3.length; i++) {
+                             aH3[i].className = "";
+                            aDiv[i].style.display = "none";
+                            aDiv[this.index].className = "";
+                             aDiv[this.index].className = "content";
+                        }
+                        this.className = "active";
+                         aDiv[this.index].style.display = "block";
+                     };
+                 }
+            };
+        </script>
+</head>
+<body>
+
+    <ul class="slideshow">
+
+        <li>
+
+            <span class="tu" >
+
+            
+            <span></span>
+
+        </li>
+
+        <li>
+            
+          
+            <span class="tu">
+            
+             </span>
+
+        </li>
+
+        <li>
+
+           
+            <span class="tu"></span>
+
+        </li>
+
+        <li>
+            <span class="tu"></span>
+    </li>
+</ul>
+<span class="travel5" title="爱游网"><img src="travel5.jpg"></span>
+<span class="travel1">
+<img src="travel3.jpg" title="爱游网"></span><span class="travel2"><img src="travel2.jpg" title="爱游网"></span><center>
+<div class="xing1"><a href="1.html">&nbsp;&nbsp;首页&nbsp;&nbsp; </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="chengdu1.html">&nbsp;&nbsp;地点游&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="3.html">&nbsp;&nbsp;主题游&nbsp;&nbsp;</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="liuyanban.html">&nbsp;&nbsp;留言板&nbsp;&nbsp;</a></div>
+<div class="xing"></div></center>
+<span class="cheng">成都</span>
+<div class="xing2"><div class="price"><br><br><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="5">成都欢迎您！ </font></p><br><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color="red">全场￥1000起</font></p><p1> <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">&nbsp;&nbsp;&nbsp;&nbsp;<蜀忘近来，找寻最城都的...&nbsp;&nbsp;&nbsp;&nbsp;</a></p1><br><br><p2>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">&nbsp;&nbsp;&nbsp;&nbsp;<有限成都 吃货天堂>&nbsp;&nbsp;&nbsp;&nbsp;</a></p2><br><br><p3>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">&nbsp;&nbsp;&nbsp;&nbsp; <成都，带不走只有你> &nbsp;&nbsp;&nbsp;&nbsp;</a></p3><br><br><p4>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">&nbsp;&nbsp;&nbsp;&nbsp;<独行成都，跨年2017 >&nbsp;&nbsp;&nbsp;&nbsp;</a></p4></div>
+
+<div class="chengdou"><img src="jinligujie.jpg">&nbsp;&nbsp;
+<img src="dujiangyan.jpg">&nbsp;&nbsp;
+<img src="jinshayizhi.jpg">
+<br>
+<br>
+<img src="kuanzhaixiangzi.jpg">&nbsp;&nbsp;
+<img src="xiongmaojidi.jpg">&nbsp;&nbsp;
+<img src="baihuatan.jpg"></div></div>
+<div class="xing10"></div>
+<span class="cheng1">&nbsp;&nbsp;&nbsp;&nbsp;锦里古城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red" size="5">￥200</font>起</span><span class="cheng2">&nbsp;&nbsp;&nbsp;&nbsp;都江堰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red" size="5">￥280</font>起</span><span class="cheng3">&nbsp;&nbsp;&nbsp;&nbsp;金沙遗址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red" size="5">￥190</font>起</span>
+<span class="cheng4">&nbsp;&nbsp;&nbsp;&nbsp;宽窄巷子&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red" size="5">￥200</font>起</span><span class="cheng5">&nbsp;&nbsp;&nbsp;&nbsp;熊猫基地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red" size="5">￥300</font>起</span><span class="cheng6">&nbsp;&nbsp;&nbsp;&nbsp;百花潭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red" size="5">￥100</font>起</span>
+<span class="season1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="四季图标1.jpg" width="170px" height="120px"></span>
+<div id="tab">        
+             <h3 class="active">春天</h3>
+             <h3>夏天</h3>
+             <h3>秋天</h3>
+             <h3>冬天</h3>
+             
+             <div class="content">
+             <br>
+             
+             
+             <img src="yangzhoushouxihu.png" width="293px" height="250px">
+             <img src="wuxi.png" width="293px" height="250px">
+             <img src="suzhoumudu.png" width="293px" height="250px">
+             <img src="zhejiangxitang.png" width="293px" height="250px"><span class="many4"><a href="spring1.html">&nbsp;&nbsp;&nbsp;更多>></a></span><span class="xing3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;扬州瘦西湖</span><center><span class="xing4">无锡</span><span class="xing5">苏州木渎</span><span class="xing6">浙江西塘</span></center></div>
+             <div>
+             <br>
+           
+             <img src="beihaidao.jpg" width="293px" height="250px">
+             <img src="jinandaminghu.jpg" width="293px" height="250px">
+             <img src="hangzhouxihu.jpg" width="293px" height="250px">
+             <img src="jiuzhaigou.jpg" width="293px" height="250px"><span class="many7"><a href="summer1.html">&nbsp;&nbsp;&nbsp;更多>></a></span><center>
+             <span class="xing3">北海道</span><span class="xing4">济南大明湖</span><span class="xing5">杭州西湖</span><span class="xing6">九寨沟</span></center>
+             </div>
+             <div><br>
+           
+             <img src="neimengguejina.png" width="293px" height="250px">
+             <img src="sichuan.png" width="293px" height="250px">
+             <img src="xinjiangkenasi.png" width="293px" height="250px">
+             <img src="liaoninghonghaitan.png" width="293px" height="250px"><span class="many5"><a href="fall1.html">&nbsp;&nbsp;&nbsp;更多>></a></span>
+             <center><span class="xing3">内蒙古额济纳</span><span class="xing4">四川· 稻城亚丁</span><span class="xing5">新疆· 喀纳斯</span><span class="xing6">辽宁· 红海滩</span></center></div> 
+             <div>
+             <br>
+             
+             <img src="hailuowan.png" width="293px" height="250px">
+             <img src="beijicun.png" width="293px" height="250px">
+             <img src="songhuajiang.jpg" width="293px" height="250px">
+             <img src="neimenggubingxue.jpg" width="293px" height="250px"><span class="many6"><a href="winter1.html">&nbsp;&nbsp;&nbsp;更多>></a></span><center>
+             <span class="xing3">海螺湾</span><span class="xing4">北极村</span><span class="xing5">松花江</span><span class="xing6">内蒙古冰雪</span></center></div>                      
+         </div>
+            
+<!--<span class="season2"><img src="四季图标1.jpg" width="170px" height="120px"></span>-->
+<span class="mianyang">绵阳</span>
+<div class="summer"><img src="jiuhuangshan.jpg"  >&nbsp;&nbsp;&nbsp;
+<img src="yaowanggu.jpg" >&nbsp;&nbsp;&nbsp;
+<img src="jialebihai.jpg" ></div><center>
+<span class="xing7">九皇山</span>
+<span class="xing8">药王谷</span>
+<span class="xing9">加勒比海</span></center>
+
+<!--<span class="season3"><img src="四季图标1.jpg" width="170px" height="120px"></span>-->
+<span class="mulan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;木兰围场</span>
+<div class="fall"><div class="say3">&nbsp;<br>&nbsp;&nbsp;<br>&nbsp;坝上的木兰围场可以说是国内10月最美的塞上秋景之一了，秋天的木兰围场看起来十分特别，你来到这里旅游，你会看见错落的草原，有时会交换草原的颜色，一会是金黄色，一会是碧绿色，金黄和棕色相互交替。如果在这里呆上一段时间，每天看到的都是五彩的景象，这里的天气非常的舒适，秋高气爽，这里简直就可以称为中国最美的秋天美景。每年入秋时木兰围场就成为了摄影师的天堂，随手拍一张照片，几乎就可以拿来做封面，这里的景色的确让人难以忘怀。坝上的草原并不是指定某一个地方，坝上草原只是一个地方的统称，主要分为河北的围场县，丰宁县以及张北县三个部分，所以坝上围场就是指这三个部分结合起来的地方。
+</div><img src="mulanweichang.jpg" width="550px" height="300px"></div>
+<!--<span class="season4"><img src="四季图标1.jpg" width="170px" height="120px"></span>-->
+<span class="haerbin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哈尔滨</span>
+<div class="winter"><div class="say4">&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;哈尔滨的冬天非常漫长，哈尔滨的冬天也非常迷人。这座城市，冰雪是他的名字。北国的冬天被它演绎的惟妙惟肖。想要冬季来东北旅游的朋友，哈尔滨是您不容错过的地方。这里的冬天旅游地方非常多。首先就是中央大街，这算得上是哈尔滨的地标了，而且也是很繁华的一个地方。它是哈尔滨市很繁盛的一条商业步行街，北起江畔的防洪纪念塔广场，南接新阳广场，长1400米。这条长街始建于1900年，中央大街的风格有很浓厚的俄罗斯气息，漫步在中央大街上能感受到很多异域元素，而且街边也能看见各种各样的冰雕，沿途走下去就会来到江边，冬天的江边是最精彩的，在江边上有各种小吃，还有很多可以玩的项目。
+</div><img src="haerbin.jpg" width="550px" height="300px"></div>
+<div class="yunnan"><p>云南</p><img src="kunmingshilin.jpg" width="370px" height="250px"></div><div class="lijiang"><img src="lijiang.jpg"width="370px" height="250px"></div>
+<div class="wen1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;昆明石林</div>
+<div class="wen2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;丽江</div>
+<div class="yunnanjieshao">云南，素以其美丽、丰饶、神奇而著称于世，一向被外界称为“秘境”，吸引着世界各地的游客。闻名于世的金沙江、怒江、澜沧江几乎并排地经这里流向远方，险峰峡谷纵横交错，江河溪流源远流长，湖泊温泉星罗棋布，造就了这块神奇美丽的乐土。从世界园艺博览会举办地的省城昆明，到“风花雪月”的大理名胜；从高原水城丽江、神奇的“香格里拉”—中甸，到孔雀曼舞的西双版纳；从“天下第一奇观”的石林、千姿百态的元谋土林，到世所罕见的“三江”并流，江狭水凶的虎跳峡……</div>
+<div class="many1"><a href="chengdu1.html">&nbsp;&nbsp;&nbsp;更多>></a></div>
+<div class="many2"><a href="mianyang1.html">&nbsp;&nbsp;&nbsp;更多>></a></div>
+<div class="many3"><a href="yunnan1.html">&nbsp;&nbsp;&nbsp;更多>></a></div>
+<center><div class="end">期&nbsp;&nbsp;末&nbsp;&nbsp;大&nbsp;&nbsp;作&nbsp;&nbsp;业</div></center>
+
+</body>
+
+</html>

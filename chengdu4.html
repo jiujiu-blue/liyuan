@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+     body
+    {
+    background:url(book1.jpg);
+    background-size:100% 800px;
+    -moz-background-size:100% 800px; /* 老版本的 Firefox */
+    background-repeat:no-repeat;
+    }
+    
+    
+    div.wenzi{
+        width:320px;
+        
+        position: absolute;
+        top: 200px;
+        left: 380px;        
+    }
+    div.img{
+        position: absolute;
+        top:250px;
+        left:840px;
+        width: 450px;
+    }
+    span.left{
+        position: absolute;
+        top: 50%;
+        left: 18%;
+    }
+    span.right{
+        position: absolute;
+        top: 50%;
+        right: 18%;
+    }
+    span.back{
+        position: absolute;
+        top:30px;
+        left:30px;
+    }
+     *{padding: 0;margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */
+    .wrap{width: 800px;margin: 0 auto;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration: none;}   /* 去掉默认a标签的下划线 */
+    ul,li{list-style: none;}
+    nav .level>li{float: center;width: 16.66%;text-align: center;background: bisque;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: black;}
+    nav .level>li:hover{background:  #EAADEA;}   /* 设置鼠标滑过后的样式 */
+
+    nav .two{display: none;margin-top: 10px;}  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+    nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+    nav .two li:hover{background: bisque;}
+    nav{
+        position: absolute;
+        top:70px;
+        left: 10px;
+    }
+    </style>
+</head>
+<body>
+<nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="1.html">首页</a></li>
+                <li>
+                        地点游
+                    <ul class="two">
+                        <li><a href="chengdu1.html">成都</a></li>
+                        <li><a href="mianyang1.html">绵阳</a></li>
+                        <li><a href="yunnan1.html">云南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    主题游
+                    <ul class="two">
+                        <li><a href="3.html">浪漫基地</a></li>
+                        <li><a href="4.html">避暑圣地</a></li>
+                        <li><a href="spring1.html">春景</a></li>
+                        <li><a href="summer1.html">夏景</a></li>
+                        <li><a href="fall1.html">秋景</a></li>
+                        <li><a href="winter1.html">冬景</a></li>
+                        <li><a href="2.html">夜景</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="liuyanban.html">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<span class="back">
+<a href="1.html">
+<img src="返回.png" width="80px" height="60px"></a></span>
+<span class="left"><a href="chengdu3.html">
+<img src="play_wps图片.png" height="50px" width="50px"></a></span>
+
+       <div class="wenzi"> 宽巷子是“闲生活”区，以旅游休闲为主题，主要针对怀旧休闲客群，是以精品酒店、私房餐饮、特色民俗餐饮、特色休闲茶馆、特色休闲酒馆、特色客栈、特色企业会所、SPA为主题的情景消费游憩区。窄巷子是“慢生活”区，以品牌商业为主题，针对主题精品消费的目的性消费客群。该区域将打造成以各国西餐、各地品牌餐饮、轻便餐饮、精品饰品、艺术休闲、特色文化主题店为主的精致生活品味区。井巷子是“新生活”区，以时尚年轻为主题，针对都市年轻人。是以酒吧、夜店、甜品店、婚场、小型特色零售、轻便餐饮、创意时尚为主题的时尚动感娱乐区。为了更充分地展示宽窄巷子所蕴含的老成都生活精神，充实宽窄巷子的文化旅游内涵，打造“成都原真生活体验馆”，以博物馆的形态再现老成都的生活，通过方言、小吃、礼仪等对成都原真生活断面进行复原和展示，并通过参与互动体验项目，让观众可以在这里回到老成都生活情景中，体验老成都的生活乐趣。
+    </div>
+    <div class="img">
+    <img src="kuanzhaixiangzi.jpg" width="380px" height="300px">
+    </div>
+<span class="right">
+    <a href="chengdu5.html">
+<img src="play_wps图片1.png" height="50px" width="50px"></a></span>
+
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+     body
+    {
+    background:url(book1.jpg);
+    background-size:100% 800px;
+    -moz-background-size:100% 800px; /* 老版本的 Firefox */
+    background-repeat:no-repeat;
+    }
+    
+    
+    div.wenzi{
+        width:320px;
+        
+        position: absolute;
+        top: 200px;
+        left: 380px;        
+    }
+    div.img{
+        position: absolute;
+        top:250px;
+        left:840px;
+        width: 450px;
+    }
+    span.left{
+        position: absolute;
+        top: 50%;
+        left: 18%;
+    }
+    span.right{
+        position: absolute;
+        top: 50%;
+        right: 18%;
+    }
+    span.back{
+        position: absolute;
+        top:30px;
+        left:30px;
+    }
+     *{padding: 0;margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */
+    .wrap{width: 800px;margin: 0 auto;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration: none;}   /* 去掉默认a标签的下划线 */
+    ul,li{list-style: none;}
+    nav .level>li{float: center;width: 16.66%;text-align: center;background: bisque;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: black;}
+    nav .level>li:hover{background:  #EAADEA;}   /* 设置鼠标滑过后的样式 */
+
+    nav .two{display: none;margin-top: 10px;}  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+    nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+    nav .two li:hover{background: bisque;}
+    nav{
+        position: absolute;
+        top:70px;
+        left: 10px;
+    }
+    </style>
+</head>
+<body>
+<nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="1.html">首页</a></li>
+                <li>
+                        地点游
+                    <ul class="two">
+                        <li><a href="chengdu1.html">成都</a></li>
+                        <li><a href="mianyang1.html">绵阳</a></li>
+                        <li><a href="yunnan1.html">云南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    主题游
+                    <ul class="two">
+                        <li><a href="3.html">浪漫基地</a></li>
+                        <li><a href="4.html">避暑圣地</a></li>
+                        <li><a href="spring1.html">春景</a></li>
+                        <li><a href="summer1.html">夏景</a></li>
+                        <li><a href="fall1.html">秋景</a></li>
+                        <li><a href="winter1.html">冬景</a></li>
+                        <li><a href="2.html">夜景</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="liuyanban.html">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<span class="back">
+<a href="1.html">
+<img src="返回.png" width="80px" height="60px"></a></span>
+<span class="left"><a href="">
+<img src="play_wps图片.png" height="50px" width="50px"></a></span>
+
+    <div class="wenzi">
+      北海道（Hokkaido）位于日本最北部，濒临日本海、鄂霍次克海和太平洋，面积83,500平方公里，占日本国土的22％，人口约600万。夏天湿度较低，气候宜人，冬天能开展滑雪等各种冬季体育活动，春秋天也各有特点，作为观光地，北海道一年四季都受人欢迎。 北海道土地辽阔，自然优美，物产丰富。冬季冰封千里，可观赏冰雪节、流冰和滑雪，夏季原野鲜花盛开，气候凉爽，是日本避暑胜地。美食有札幌啤酒、拉面、毛蟹海鲜等。 这里有大雪山国立公园，它是北海道的屋脊，而知床半岛有着许多不为人知的秘境，钏路湿原生息着丹顶鹤等珍禽，支笏洞爷国立公园分布着众多火山和湖泊，积丹海岸曲折多变，去这些风景区游览，能让人感受到大自然的雄伟壮丽。除此以外，北海道还有登别、定山溪、层云峡等许多温泉区，游客在这里可以放松身心，洗去旅途的疲劳。
+    </div>
+    <div class="img">
+    <img src="beihaidao.jpg" width="380px" height="300px">
+    </div>
+<span class="right">
+    <a href="summer2.html">
+<img src="play_wps图片1.png" height="50px" width="50px"></a></span>
+
+
+</body>
+</html>

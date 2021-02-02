@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+     body
+    {
+    background:url(book1.jpg);
+    background-size:100% 800px;
+    -moz-background-size:100% 800px; /* 老版本的 Firefox */
+    background-repeat:no-repeat;
+    }
+    
+    
+    div.wenzi{
+        width:320px;
+        
+        position: absolute;
+        top: 200px;
+        left: 380px;        
+    }
+    div.img{
+        position: absolute;
+        top:250px;
+        left:840px;
+        width: 450px;
+    }
+    span.left{
+        position: absolute;
+        top: 50%;
+        left: 18%;
+    }
+    span.right{
+        position: absolute;
+        top: 50%;
+        right: 18%;
+    }
+    span.back{
+        position: absolute;
+        top:30px;
+        left:30px;
+    }
+     *{padding: 0;margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */
+    .wrap{width: 800px;margin: 0 auto;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration: none;}   /* 去掉默认a标签的下划线 */
+    ul,li{list-style: none;}
+    nav .level>li{float: center;width: 16.66%;text-align: center;background: bisque;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: black;}
+    nav .level>li:hover{background:  #EAADEA;}   /* 设置鼠标滑过后的样式 */
+
+    nav .two{display: none;margin-top: 10px;}  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+    nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+    nav .two li:hover{background: bisque;}
+    nav{
+        position: absolute;
+        top:70px;
+        left: 10px;
+    }
+    </style>
+</head>
+<body>
+<nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="1.html">首页</a></li>
+                <li>
+                        地点游
+                    <ul class="two">
+                        <li><a href="chengdu1.html">成都</a></li>
+                        <li><a href="mianyang1.html">绵阳</a></li>
+                        <li><a href="yunnan1.html">云南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    主题游
+                    <ul class="two">
+                        <li><a href="3.html">浪漫基地</a></li>
+                        <li><a href="4.html">避暑圣地</a></li>
+                        <li><a href="spring1.html">春景</a></li>
+                        <li><a href="summer1.html">夏景</a></li>
+                        <li><a href="fall1.html">秋景</a></li>
+                        <li><a href="winter1.html">冬景</a></li>
+                        <li><a href="2.html">夜景</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="liuyanban.html">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<span class="back">
+<a href="1.html">
+<img src="返回.png" width="80px" height="60px"></a></span>
+<span class="left"><a href="spring2.html">
+<img src="play_wps图片.png" height="50px" width="50px"></a></span>
+    <div class="wenzi">
+      木渎位于苏州城西，太湖之滨，是江南著名古镇。境内风光秀丽，物产丰饶，又恰在天平、灵岩、狮山、七子等吴中名山环抱之中，故有“聚宝盆”之称。 木渎四周群山拱峙，又毗邻太湖，既得真山真水之趣，又具小桥流水之幽，更有私家园林、名人故居等众多的人文古迹，因而，木渎景区名列太湖风景区十三个景区之首。作为中国唯一的园林古镇，木渎在明清时有私家园林 30 多处，迄今仍保留了 10 余处。其中，严家花园乃乾隆的老师、中国最长寿的诗人沈德潜故居，后归木渎首富严国馨，园中布局疏密曲折，高下得宜，局部处理精巧雅致，幽深婉约，显示了营造者独具匠心的造园艺术，现代建筑学家刘敦桢、梁思成等人数次考察此园，倍加推崇，称其为苏州当地园林之“翘楚”。虹饮山房是木渎文人徐士元故宅，占地广袤，建筑大气，其“溪山风月之美，池亭花木之胜”，远胜过其它园林，乾隆每到木渎必游此园。 
+    </div>
+    <div class="img">
+    <img src="suzhoumudu.png" width="380px" height="300px">
+    </div>
+<span class="right">
+    <a href="spring4.html">
+<img src="play_wps图片1.png" height="50px" width="50px"></a></span>
+
+
+</body>
+</html>

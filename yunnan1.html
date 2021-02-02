@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+     body
+    {
+    background:url(book1.jpg);
+    background-size:100% 800px;
+    -moz-background-size:100% 800px; /* 老版本的 Firefox */
+    background-repeat:no-repeat;
+    }
+    
+    
+    div.wenzi{
+        width:320px;
+        
+        position: absolute;
+        top: 200px;
+        left: 380px;        
+    }
+    div.img{
+        position: absolute;
+        top:250px;
+        left:840px;
+        width: 450px;
+    }
+    span.left{
+        position: absolute;
+        top: 50%;
+        left: 18%;
+    }
+    span.right{
+        position: absolute;
+        top: 50%;
+        right: 18%;
+    }
+    span.back{
+        position: absolute;
+        top:30px;
+        left:30px;
+    }
+     *{padding: 0;margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */
+    .wrap{width: 800px;margin: 0 auto;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration: none;}   /* 去掉默认a标签的下划线 */
+    ul,li{list-style: none;}
+    nav .level>li{float: center;width: 16.66%;text-align: center;background: bisque;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: black;}
+    nav .level>li:hover{background:  #EAADEA;}   /* 设置鼠标滑过后的样式 */
+
+    nav .two{display: none;margin-top: 10px;}  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+    nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+    nav .two li:hover{background: bisque;}
+    nav{
+        position: absolute;
+        top:70px;
+        left: 10px;
+    }
+    </style>
+</head>
+<body>
+<nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="1.html">首页</a></li>
+                <li>
+                        地点游
+                    <ul class="two">
+                        <li><a href="chengdu1.html">成都</a></li>
+                        <li><a href="mianyang1.html">绵阳</a></li>
+                        <li><a href="yunnan1.html">云南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    主题游
+                    <ul class="two">
+                        <li><a href="3.html">浪漫基地</a></li>
+                        <li><a href="4.html">避暑圣地</a></li>
+                        <li><a href="spring1.html">春景</a></li>
+                        <li><a href="summer1.html">夏景</a></li>
+                        <li><a href="fall1.html">秋景</a></li>
+                        <li><a href="winter1.html">冬景</a></li>
+                        <li><a href="2.html">夜景</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="liuyanban.html">留言板</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<span class="back">
+<a href="1.html">
+<img src="返回.png" width="80px" height="60px"></a></span>
+<span class="left"><a href="">
+<img src="play_wps图片.png" height="50px" width="50px"></a></span>
+
+    <div class="wenzi">
+        <br>小石林<br>
+小石林（阿诗玛景区），宽厚墩实的石壁像屏风一样，将小石林（阿诗玛景区）分割成若干园林。小石林（阿诗玛景区）里最有名气的景点当数“阿诗玛”，当夜幕降临，彩灯映照，更是五彩斑斓，妩媚动人。 <br>
+大石林<br>
+大石林由密集的石峰组成，有如一片石盆地。这里的石林直立突兀，线条顺畅，并呈淡淡的青灰色，最高大的独立岩柱高度超过40米。其中有“莲花峰”、“剑峰池”、“千钧一发”、“极狭通人”、“象距石台”、“幽兰深谷”、“凤凰梳翅”等典型景点，最著名的当数龙云题词“石林”之处的“石林胜境”，而“望峰亭”为欣赏“林海”的最佳处。 
+    </div>
+    <div class="img">
+    <img src="kunmingshilin.jpg" width="380px" height="300px">
+    </div>
+
+<span class="right">
+    <a href="yunnan2.html">
+<img src="play_wps图片1.png" height="50px" width="50px"></a></span>
+
+</body>
+</html>
